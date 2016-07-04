@@ -21,7 +21,7 @@ public class PersonController {
 	{
 		System.out.println("inside controller");
 	}
-	
+	// commented fro testing jugal
 	@Autowired(required=true)
 	@Qualifier(value="personService")
 	public void setPersonService(PersonService ps){
