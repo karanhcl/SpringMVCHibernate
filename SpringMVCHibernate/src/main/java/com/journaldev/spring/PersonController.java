@@ -36,7 +36,7 @@ public class PersonController {
 		return "person";
 	}
 	
-	//For add and update person both
+	//For add and update person bothh
 	@RequestMapping(value= "/person/add", method = RequestMethod.POST)
 	public String addPerson(@ModelAttribute("person") Person p){
 		
