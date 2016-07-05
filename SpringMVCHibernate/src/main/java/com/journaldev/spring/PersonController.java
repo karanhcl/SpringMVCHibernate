@@ -14,7 +14,7 @@ import com.journaldev.spring.service.PersonService;
 
 @Controller
 public class PersonController {
-	//PersonService2
+	//PersonService3
 	private PersonService personService;
 	
 	PersonController()
