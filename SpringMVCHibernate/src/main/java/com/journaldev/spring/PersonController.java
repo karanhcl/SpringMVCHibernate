@@ -21,13 +21,13 @@ public class PersonController {
 	{
 		System.out.println("inside controller");
 	}
-	// commented fro testing jugal fghhfhfhgh
+	// commented fro testing jugal fghhfhfhgh 
 	@Autowired(required=true)
 	@Qualifier(value="personService")
 	public void setPersonService(PersonService ps){
 		this.personService = ps;
 	}
-	
+	//ghghgfhgf
 	@RequestMapping(value = "/persons", method = RequestMethod.GET)
 	//@RequestMapping(value = "/persons", method = RequestMethod.GET )
 	public String listPersons(Model model) {
@@ -35,8 +35,8 @@ public class PersonController {
 		model.addAttribute("listPersons", this.personService.listPersons());
 		return "person";
 	}
-	
-	//For add and update person both
+	//ddfgfdgfdg
+	//For add and update person bothh
 	@RequestMapping(value= "/person/add", method = RequestMethod.POST)
 	public String addPerson(@ModelAttribute("person") Person p){
 		
