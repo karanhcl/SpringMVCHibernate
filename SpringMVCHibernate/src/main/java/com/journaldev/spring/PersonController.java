@@ -35,7 +35,7 @@ public class PersonController {
 		model.addAttribute("listPersons", this.personService.listPersons());
 		return "person";
 	}
-	
+	//ddfgfdgfdg
 	//For add and update person bothh
 	@RequestMapping(value= "/person/add", method = RequestMethod.POST)
 	public String addPerson(@ModelAttribute("person") Person p){
