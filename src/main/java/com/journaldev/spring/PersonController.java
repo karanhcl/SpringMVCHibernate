@@ -16,7 +16,7 @@ import com.journaldev.spring.service.PersonService;
 public class PersonController {
 	//PersonService1
 	private PersonService personService;
-	
+	// person controller
 	PersonController()
 	{
 		System.out.println("inside controller");
