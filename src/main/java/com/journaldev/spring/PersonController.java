@@ -14,15 +14,7 @@ import com.journaldev.spring.service.PersonService;
 
 @Controller
 public class PersonController {
-
 	//PersonService1
-
-	
-	//testing git commit from eclipse
-	// commiting to develop branch 
-	//hrllp
-	
-
 	private PersonService personService;
 	// person controller
 	PersonController()
