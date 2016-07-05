@@ -14,20 +14,20 @@ import com.journaldev.spring.service.PersonService;
 
 @Controller
 public class PersonController {
-	//PersonService4
+	
 	private PersonService personService;
 	
 	PersonController()
 	{
 		System.out.println("inside controller");
 	}
-	// commented fro testing jugal fghhfhfhgh 
+	
 	@Autowired(required=true)
 	@Qualifier(value="personService")
 	public void setPersonService(PersonService ps){
 		this.personService = ps;
 	}
-	//ghghgfhgf
+	
 	@RequestMapping(value = "/persons", method = RequestMethod.GET)
 	//@RequestMapping(value = "/persons", method = RequestMethod.GET )
 	public String listPersons(Model model) {
@@ -35,8 +35,8 @@ public class PersonController {
 		model.addAttribute("listPersons", this.personService.listPersons());
 		return "person";
 	}
-	//ddfgfdgfdg
-	//For add and update person bothh
+	
+	//For add and update person both
 	@RequestMapping(value= "/person/add", method = RequestMethod.POST)
 	public String addPerson(@ModelAttribute("person") Person p){
 		
